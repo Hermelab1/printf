@@ -16,9 +16,6 @@
 typedef struct format_spec
 {
 char *c;
-int plusSign;
-int hashSign;
-int spaceSign;
 int (*f)(va_list);
 } form_spec;
 int _putchar(char);
