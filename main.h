@@ -16,6 +16,9 @@
 typedef struct format_spec
 {
 char *c;
+int plusSign;
+int hashSign;
+int spaceSign;
 int (*f)(va_list);
 } form_spec;
 int _putchar(char);
@@ -39,6 +42,6 @@ int print_binary(unsigned int);
 int print_number(unsigned int);
 int print_hexadecimal(unsigned long int, int, int);
 int print_octal(unsigned int);
-
+int get_special_specifiers(char c, form_spet *f);
 
 #endif

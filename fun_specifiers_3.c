@@ -39,3 +39,31 @@ if (!num)
 return (_putchar('0'));
 return (print_hexadecimal(num, 0, 1));
 }
+
+/**
+ * get_special_specifiers - to gets special characters like '', +, #
+ * @c: any of the above character
+ * *f: type defination
+ */
+int get_special_specifiers(char c, form_spet *f)
+{
+	int res = 0;
+
+	if (c == '+')
+	{
+		f->plusSign = 1;
+		res = 1;
+	}
+	else if (c == '#')
+	{
+		f->hashSign = 1;
+		res = 1;
+	}
+	else if (c == ' ')
+	{
+		f->spaceSign = 1;
+		res = 1;
+	}
+
+	return (res);
+}
