@@ -27,8 +27,11 @@ int _printf(const char *format, ...)
 		{NULL, NULL}
 	};
 	va_list args;
+
 	if (!format)
+	{
 		return (-1);
+	}
 	va_start(args, format);
 	count_of_char = printer(format, specifiers, args);
 	va_end(args);
