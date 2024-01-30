@@ -57,8 +57,6 @@ int printer(const char *format, form_spec specifiers[], va_list args)
 			x++;
 			if (format[x] == '\0')
 				return (-1);
-			while (get_special_specifiers(*curr, &t))
-				x++;
 			for (y = 0; specifiers[y].c != NULL; y++)
 			{
 				if (format[x] == specifiers[y].c[0])
