@@ -39,6 +39,5 @@ int print_binary(unsigned int);
 int print_number(unsigned int);
 int print_hexadecimal(unsigned long int, int, int);
 int print_octal(unsigned int);
-int get_special_specifiers(char c, form_spet *f);
 
 #endif
