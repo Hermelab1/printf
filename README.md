@@ -1,1 +1,1 @@
-This printf project is a collabrotion  project between Hermaela Birhanu and Abinet Tsegaye Wondimu. In this project we write our own printf function that operate as same as the original printf fuction.
+This printf project is a collabrotion  project between Hermaela Birhanu Gebremariam and Abinet Tsegaye Wondimu. In this project we write our own printf function that operate as same as the original printf fuction.
